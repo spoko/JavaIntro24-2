@@ -10,6 +10,7 @@ public class ReadingFromConsole {
 
         //Giving info to the user that we expect some input
         System.out.println("Please enter your name:");
+
         //reading the input using the sc variable
         String userName = sc.nextLine();//reading strings!!!
 
@@ -20,6 +21,5 @@ public class ReadingFromConsole {
         int userAge = sc.nextInt();//reading whole number
 
         System.out.println("What a wonderful age, " + userAge + ".");
-
     }
 }
