@@ -15,11 +15,11 @@ public class ReadingFromConsole {
         String userName = sc.nextLine();//reading strings!!!
 
         //final line of our program - greeting the user
-        System.out.println("Nice to meet you, " + userName + "!");
+        System.out.printf("Nice to meet you, %s!\n", userName);
 
         System.out.println("Please enter your age:");
-        int userAge = sc.nextInt();//reading whole number
+        int userAge = (int) sc.nextDouble();//reading whole number
 
-        System.out.println("What a wonderful age, " + userAge + ".");
+        System.out.printf("What a wonderful age, %d.\n", userAge);
     }
 }
