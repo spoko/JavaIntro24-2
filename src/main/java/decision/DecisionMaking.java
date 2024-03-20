@@ -1,6 +1,8 @@
 package decision;
 
 public class DecisionMaking {
+    public static String name;
+    public  String nonStaticName;
     public static void main(String[] args) {
         printUserDetails(-1);
         printUserDetails(0);
@@ -41,6 +43,9 @@ public class DecisionMaking {
         } else if (age >= 66 && age <= 130) {
             System.out.println("Happy traveling!");
         }
+
+        System.out.println(name);//we can access static fields
+        //System.out.println(nonStaticName);//we cannot access non-static fields inside static methods
     }
 
     public static void printMonthOfTheYear(int month){

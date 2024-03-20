@@ -65,13 +65,23 @@ public class Pet {
         }
     }
 
-    //constructor
+    //constructor type II - with parameters
     public Pet(String name, byte age, boolean isMale, Breed breed, Address address){
         setName(name);
         setAge(age);
         setMale(isMale);
         setBreed(breed);
         setAddress(address);
+    }
+
+    public Pet(boolean isMale, Breed breed){
+        setMale(isMale);
+        setBreed(breed);
+    }
+
+    //type I - no parameters and also default
+    public Pet(){
+
     }
 
     //method i.e. actions

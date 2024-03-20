@@ -29,6 +29,10 @@ public class Address {
         this.zipCode = zipCode;
     }
 
+    public Address(){
+        this("Unknown", "Unknown", 00000);
+    }
+
     public Address(String country, String city, int zipCode){
         setCountry(country);
         setCity(city);
