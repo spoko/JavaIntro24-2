@@ -10,6 +10,6 @@ public class Test {
 
         MethodsDemo.printPositiveNumbersToN(methodsDemo.getPositiveNumber());//static method can be accessed directly from the class. Parameter as reference
 
-
+        methodsDemo.sum(methodsDemo.average(4, 5), methodsDemo.average(5, 6));
     }
 }

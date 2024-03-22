@@ -22,4 +22,12 @@ public class MethodsDemo {
     public int getPositiveNumber(){
         return 3;
     }
+
+    public int average(int a, int b){
+        return 3;
+    }
+
+    public int sum(int a, int b){
+        return 7;
+    }
 }

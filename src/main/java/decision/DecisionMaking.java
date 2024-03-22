@@ -1,5 +1,7 @@
 package decision;
 
+import enumsDemo.MonthsOfTheYear;
+
 public class DecisionMaking {
     public static String name;
     public  String nonStaticName;
@@ -21,7 +23,7 @@ public class DecisionMaking {
 
         System.out.println("-----------");
 
-        printMonthOfTheYear(4);
+        printMonthOfTheYear(MonthsOfTheYear.FEBRUARY);
     }
 
     public static void printUserDetails(int age){
@@ -48,16 +50,16 @@ public class DecisionMaking {
         //System.out.println(nonStaticName);//we cannot access non-static fields inside static methods
     }
 
-    public static void printMonthOfTheYear(int month){
+    public static void printMonthOfTheYear(MonthsOfTheYear month){
         switch (month){
-            case 1:
+            case JANUARY:
                 System.out.println("The selected month is January");
                 break;
-            case 2:
+            case FEBRUARY:
                 System.out.println("The selected month is February");
                 break;
-            default:
-                System.out.println("Invalid entry! Please enter number between 1 and 12!");
+//            default:
+//                System.out.println("Invalid entry! Please enter number between 1 and 12!"); using of the Enum makes this obsolete
         }
     }
 }

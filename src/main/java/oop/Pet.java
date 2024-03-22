@@ -84,6 +84,15 @@ public class Pet {
 
     }
 
+    //type III i.e. copy constructor
+    public Pet(Pet pet){
+        setName(pet.getName());
+        setAge(pet.getAge());
+        setMale(pet.isMale());
+        setBreed(pet.getBreed());
+        setAddress(pet.getAddress());
+    }
+
     //method i.e. actions
     public void eat(){
         System.out.printf("%s is eating...\n", name);
