@@ -10,7 +10,11 @@ public class Test {
 
         //Dog morti = new Dog("Morti", (byte) 3, true, frenchie, dogAddress1, false);
         Dog morti = Dog.getFrenchie("Morti", (byte) 3, true, dogAddress1, false);
+        Dog sharo = Dog.getFrenchie("Sharo", (byte) 5, true, defaultAddress, true);
         Cat sisa = new Cat("Sisa", (byte) 2, false, persian, catAddress1, true);
+
+        Empty something = new Empty();
+        System.out.println(something);
 
         morti.eat();
         sisa.eat();
